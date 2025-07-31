@@ -1,0 +1,31 @@
+<!-- Banner Section -->
+
+{{ with .Site.Data.banner.banner }} {{ if .enable }}
+<section
+  class="banner-section position-relative d-flex align-items-center justify-content-center text-center text-white"
+  style="min-height: 100vh; 
+                background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), 
+                           url('{{ .bg_image | relURL }}') center/cover no-repeat;
+                background-attachment: fixed;"
+>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-10">
+        {{ if .icon }}
+        <i class="{{ .icon }} mb-4" style="font-size: 4rem"></i>
+        {{ end }}
+        <h1 class="display-4 mb-4">{{ .title }}</h1>
+        <p class="lead mb-5 fs-3">{{ .content }}</p>
+        {{ if .button.enable }}
+        <a
+          href="{{ .button.link }}"
+          class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill"
+        >
+          {{ .button.label }}
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }} {{ end }}

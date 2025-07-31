@@ -1,0 +1,26 @@
+{{/*
+
+  Note, if you just put some random url next to your site in your Hugo development server, it WILL NOT redirect to
+  404.html. However, you can test it by using the actual link http://localhost:1313/404.html
+
+  In production, you will have to add a trigger to your 404 file path where you host it:
+  https://gohugo.io/templates/404/#automatic-loading
+
+*/}}
+
+{{ define "main"}}
+<main id="main" class="position-relative d-flex align-items-center justify-content-center text-white" 
+      style="min-height: 100vh; 
+             background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), 
+                        url('/images/backgrounds/EHT_Saggitarius_A_black_hole.jpg') center/cover no-repeat;
+             background-attachment: fixed;">
+
+  <div class="text-center">
+    <h1 class="display-2" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">404 Not Found</h1>
+    <h2 class="display-5 mb-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">Looks like this page has been pulled into a black hole</h2>
+    <a class="mt-5 btn btn-outline-light btn-lg px-5 py-3 rounded-pill" href="{{ .Site.Home.RelPermalink }}" 
+       style="text-shadow: none;">Go back to homepage</a>
+  </div>
+
+</main>
+{{ end }}

@@ -1,0 +1,49 @@
+<!-- Latest posts section -->
+
+<section
+  id="latest-posts"
+  class="section container my-3 text-center text-white"
+>
+  <h2 class="display-6 mb-4">Latest Posts</h2>
+  <div
+    class="mx-auto"
+    style="
+      width: 60px;
+      height: 4px;
+      background-color: #094297;
+      margin-bottom: 2rem;
+    "
+  ></div>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    {{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "post" )
+    }}
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h4 class="card-title">
+            <a
+              class="stretched-link text-white mb-2 text-decoration-none"
+              href="{{ .RelPermalink }}"
+            >
+              {{ .Title }}
+            </a>
+          </h4>
+          {{ with .Params.authors }}
+          <p class="card-subtitle text-muted">by {{ index . 0 }}</p>
+          {{ end }}
+          <p class="card-text mt-3">
+            {{ with .Params.description }} {{ . }} {{ else }} {{ .Summary |
+            truncate 200 }} {{ end }}
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"
+            >{{ .Date | time.Format ":date_long" }}</small
+          >
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>

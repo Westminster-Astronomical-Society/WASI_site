@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="{{ .Language.LanguageCode | default site.Language.LanguageCode }}" data-bs-theme="dark">
+{{ partial "head/head.html" . }}
+{{ if eq .Kind "home" -}}
+    {{ .Scratch.Set "class" "home" -}}
+{{ else if eq .Kind "404" -}}
+    {{- partial "header/header.html" . -}}
+    {{ .Scratch.Set "class" "error404" -}}
+{{ else if eq .Kind "page" -}}
+    {{- partial "header/header.html" . -}}
+    {{ .Scratch.Set "class" .Type -}}
+    {{ .Scratch.Add "class" " single" -}}
+{{ else -}}
+    {{- partial "header/header.html" . -}}
+    {{ .Scratch.Set "class" .Type -}}
+    {{ .Scratch.Add "class" " list" -}}
+{{ end -}}
+<body class="{{ .Scratch.Get `class` }} d-flex flex-column min-vh-100">
+    <div id="content">
+        {{ if and (.Site.Params.options.breadCrumb) (ne .Kind "home") -}}
+            {{- partial "header/breadcrumb.html" . -}}
+        {{ end }}
+        {{- block "main" . }}{{- end }}
+    </div>
+    {{ partial "footer/footer.html" . }}
+    {{ partial "footer/script-footer.html" . }}
+</body>
+</html>

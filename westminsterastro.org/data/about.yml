@@ -1,0 +1,21 @@
+# ---------------------------- About -------------------------------
+about:
+  enable : true
+  title : What We Do
+  content : "Westminster Astronomical Society is a group of amateur astronomers dedicated to promoting the enjoyment and understanding of astronomy and related sciences. We enjoy observing the night sky and sharing our knowledge and passion with others. We hold monthly meetings, public star parties, and other events throughout the year. We also provide resources for astronomers and educators."
+
+  about_item :
+  - icon : # themify icon pack : https://themify.me/themify-icons
+    title : Public Outreach & Education
+    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+    link: /about/#public-outreach--education
+
+  - icon : # themify icon pack : https://themify.me/themify-icons
+    title : Observing the Night Sky
+    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+    link: /about/#observing-the-night-sky
+
+  - icon : # themify icon pack : https://themify.me/themify-icons
+    title : Resources for Astronomers
+    content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+    link: /about/#resources-for-astronomers

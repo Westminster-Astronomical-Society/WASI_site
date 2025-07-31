@@ -1,0 +1,49 @@
+############################# events ###################################
+events:
+  enable : true
+  image : images/events/bear-branch.jpg
+  image_webp : images/events/bear-branch.webp
+  title : Regularly Occurring Events.
+  content : >
+    We host a variety of events throughout the year, designed to engage the community,
+    promote astronomy, and provide opportunities for learning and enjoyment of the
+    night sky. Please check our event calendar for the latest updates and details on
+    each event.
+  link: https://nightsky.jpl.nasa.gov/events/wasi/
+
+  event_item: 
+    # event item
+    - title: Monthly Meeting
+      icon: ti-calendar # themify icon pack : https://themify.me/themify-icons
+      content: >
+        WASI hosts monthly meetings at 7:00 PM on the second Wednesday of every month.
+        Join us in-person or online for engaging presentations from experts in the field
+        of astronomy and hear about upcoming events.
+      link: /events/monthly-meeting
+
+    # event item
+    - title: What's Up Basics
+      icon: ti-telescope # themify icon pack : https://themify.me/themify-icons
+      content: >
+        From 7:00 PM to 7:30 PM before our monthly meetings, we host a "What's Up Basics" session.
+        providing an overview of the current night sky, and tips for beginners and
+        enthusiasts alike to improve their observing skills.
+      link: /events/whats-up-basics
+
+    # event item
+    - title: Planetarium Show
+      icon: ti-stars # themify icon pack : https://themify.me/themify-icons
+      content: >
+        In partnership with Carroll County Parks and Recreation, we host a monthly
+        educational and entertaining planetarium shows at the Bear Branch Nature Center
+        on the second Saturday of every month.
+      link: /events/monthly-planetarium-show
+
+    # event item
+    - title: Public Star Gazing
+      icon: ti-astronomer # themify icon pack : https://themify.me/themify-icons
+      content: >
+        We host public star gazing events at Bear Branch Nature Center on the
+        second Saturday of every month, and at various locations throughout the year.
+        Check our event calendar for the latest updates.
+      link: https://nightsky.jpl.nasa.gov/events/wasi/

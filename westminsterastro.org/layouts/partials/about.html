@@ -1,0 +1,61 @@
+<!-- About Section -->
+
+{{ with .Site.Data.about.about }} {{ if .enable }}
+<section
+  id="about"
+  class="about-section py-5"
+  style="background-color: var(--bs-gray-800)"
+>
+  {{ $about := .Site.Data.about }}
+
+  <div class="container" style="padding: 3rem 0">
+    <div class="row justify-content-center text-center text-white">
+      <div class="col-lg-8 mb-5">
+        <h2 class="display-6 mb-4">{{ .title }}</h2>
+        <div
+          class="mx-auto"
+          style="
+            width: 60px;
+            height: 4px;
+            background-color: #094297;
+            margin-bottom: 2rem;
+          "
+        ></div>
+        <p class="lead fs-5">{{ .content }}</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      {{ range .about_item }}
+      <div class="col-lg-4 col-md-6">
+        {{ if .link }}
+        <a href="{{ .link }}" class="text-decoration-none">
+          {{ end }}
+          <div
+            class="about-card h-100 p-4 text-center"
+            style="
+              background-color: var(--bs-body-bg);
+              border-radius: 0px;
+              cursor: pointer;
+            "
+          >
+            {{ if .icon }}
+            <div
+              class="about-icon mb-3"
+              style="color: #6c757d; font-size: 3rem"
+            >
+              <i class="{{ .icon }}"></i>
+            </div>
+            {{ end }}
+            <h4 class="text-white mb-2">{{ .title }}</h4>
+            <p class="text-light small">{{ .content }}</p>
+          </div>
+          {{ if .link }}
+        </a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }} {{ end }}

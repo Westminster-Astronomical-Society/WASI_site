@@ -1,0 +1,258 @@
+// Dark theme custom styles
+
+// Banner section styling
+.banner-section {
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    overflow: hidden;
+    
+    // Ensure text is always visible with good contrast
+    h1, p, .btn {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+    
+    // Enhanced button styling
+    .btn-outline-light {
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+        
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 1);
+            color: rgba(255, 255, 255, 1);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+    }
+    
+    // Responsive text sizing
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2.5rem !important;
+        }
+        
+        p {
+            font-size: 1.1rem !important;
+        }
+        
+        min-height: 80vh !important;
+    }
+}
+
+// Override jumbotron background for dark theme
+.jumbotron {
+    background-color: var(--bs-dark) !important;
+    color: var(--bs-light);
+}
+
+// Ensure proper contrast for masthead section
+.bd-masthead {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+// Adjust logo and images for dark theme
+.bd-masthead img {
+    filter: brightness(0.9) contrast(1.1);
+}
+
+// Improve readability for text elements
+.text-muted {
+    color: var(--bs-secondary-color) !important;
+}
+
+// Ensure cards work well in dark theme
+.card {
+    background-color: var(--bs-dark);
+    border-color: var(--bs-border-color);
+}
+
+// Improve navbar appearance
+.navbar {
+    background-color: var(--bs-dark) !important;
+}
+
+// Sticky navbar enhancements
+.navbar.sticky-top {
+    background-color: rgba(33, 37, 41, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    z-index: 1030;
+    
+    .navbar-brand, .nav-link {
+        color: rgba(255, 255, 255, 0.9) !important;
+        
+        &:hover {
+            color: rgba(255, 255, 255, 1) !important;
+        }
+    }
+    
+    .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.3);
+    }
+    
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    
+    // Dropdown menu styling for dark theme
+    .dropdown-menu {
+        background-color: rgba(33, 37, 41, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        
+        .dropdown-item {
+            color: rgba(255, 255, 255, 0.9);
+            
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                color: rgba(255, 255, 255, 1);
+            }
+            
+            &.active {
+                background-color: rgba(13, 110, 253, 0.8);
+            }
+        }
+    }
+}
+
+// Better footer appearance
+footer {
+    background-color: var(--bs-dark) !important;
+    border-top: 1px solid var(--bs-border-color-translucent) !important;
+    
+    // Ensure footer text is properly visible
+    .text-light {
+        color: var(--bs-gray-300) !important;
+    }
+    
+    // Style footer navigation links
+    .nav-link {
+        color: var(--bs-gray-300) !important;
+        transition: color 0.15s ease-in-out;
+        
+        &:hover, &:focus {
+            color: var(--bs-white) !important;
+        }
+    }
+    
+    // Improve copyright text
+    p {
+        color: var(--bs-gray-400) !important;
+        
+        a {
+            color: var(--bs-gray-300) !important;
+            text-decoration: none;
+            
+            &:hover {
+                color: var(--bs-white) !important;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// Exclude banner section from general section padding
+.banner-section {
+    padding-top: 0 !important;
+}
+
+// About section styling
+.about-section {
+    .about-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            background-color: rgba(52, 58, 64, 0.9) !important;
+        }
+        
+        .about-icon {
+            transition: color 0.3s ease;
+        }
+        
+        &:hover .about-icon {
+            color: #0d6efd !important;
+        }
+    }
+    
+    // Blue accent line
+    .accent-line {
+        background: linear-gradient(90deg, transparent, #094297, transparent);
+    }
+}
+
+// Events section styling
+.events-section {
+    .events-image {
+        position: relative;
+        overflow: hidden;
+        
+        img {
+            transition: transform 0.3s ease;
+            
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+    
+    .events-content {
+        h2 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .event-item {
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                background-color: rgba(52, 58, 64, 0.9) !important;
+            }
+        }
+        
+    }
+}
+
+// Contact section styling
+.contact-section {
+    .contact-item {
+        transition: all 0.3s ease;
+        
+        &:hover {
+            .contact-icon {
+                color: #0a58ca !important;
+            }
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+            
+            &:hover {
+                color: #6ea8fe !important;
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    .map-container {
+        position: relative;
+        
+        #contact-map {
+            border-radius: 0;
+        }
+    }
+    
+    .contact-content {
+        h2 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
