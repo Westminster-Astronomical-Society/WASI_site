@@ -20,8 +20,8 @@ alertText = "An Announcement! <a class=\"alert-link stretched-link\" href=\"http
 
 # Pre-footer
 footerAbout = true
-footerAboutTitle = "Few Words About Us"
-footerAboutText = "We protect your website so you can provide a safe environment to build trust and improve the user experience of your visitors.<br/><br/>Salvus Site is the partner that you can rely on for preventive and reactive cybersecurity."
+footerAboutTitle = ""
+footerAboutText = ""
 
 [options]
   bootStrapJs = true
