@@ -43,22 +43,22 @@ weight = 70
 title = "Astronomy Resources"
 
 [[main]]
-name = "General Astronomy"
-url = "tags/astronomy"
-weight = 10
-parent = "resources"
+  name = "General Astronomy"
+  url = "tags/astronomy"
+  weight = 10
+  parent = "resources"
 
 [[main]]
-name = "Observer Resources"
-url = "tags/observer"
-weight = 20
-parent = "resources"
+  name = "Observer Resources"
+  url = "tags/observer"
+  weight = 20
+  parent = "resources"
 
 [[main]]
-name = "Outreach Resources"
-url = "tags/outreach"
-weight = 30
-parent = "resources"
+  name = "Outreach Resources"
+  url = "tags/outreach"
+  weight = 30
+  parent = "resources"
 
 [[main]]
 identifier = "news"
@@ -67,28 +67,28 @@ weight = 80
 title = "WASI News and Announcements"
 
 [[main]]
-name = "All"
-url = "post"
-weight = 100
-parent = "news"
+  name = "All"
+  url = "post"
+  weight = 100
+  parent = "news"
 
 [[main]]
-name = "Star*Points"
-url = "tags/star-points"
-weight = 20
-parent = "news"
+  name = "Star*Points"
+  url = "tags/star-points"
+  weight = 20
+  parent = "news"
 
 [[main]]
-name = "Announcements"
-url = "tags/announcements"
-weight = 30
-parent = "news"
+  name = "Announcements"
+  url = "tags/announcements"
+  weight = 30
+  parent = "news"
 
 [[main]]
-name = "Newsletter"
-url = "tags/newsletter"
-weight = 40
-parent = "news"
+  name = "Newsletter"
+  url = "tags/newsletter"
+  weight = 40
+  parent = "news"
 
 
 [[social]]

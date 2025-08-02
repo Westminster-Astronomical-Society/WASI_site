@@ -1,12 +1,12 @@
 // Custom.scss
 // Option B: Include parts of Bootstrap
-// https://getbootstrap.com/docs/5.2/customize/sass/
+// https://getbootstrap.com/docs/5.3/customize/sass/
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "bootstrap/functions";
 
 // 2. Include any default variable overrides here
-@import "variable-overrides"; 
+@import "variable-overrides";
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "bootstrap/variables";

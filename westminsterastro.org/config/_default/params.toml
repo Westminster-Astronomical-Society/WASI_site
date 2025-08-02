@@ -6,7 +6,7 @@
 # https://schema.org/Thing
 # https://schema.org/Article
 description = "The home of Westminster Astronomical Society"
-images = ['images/WASI-3.svg','images/site-feature-image.png']
+images = ['images/WASI-3.svg', 'images/site-feature-image.png']
 mainMenuLogo = "images/WASI-3.svg"
 
 # For favicons
@@ -24,7 +24,7 @@ footerAboutTitle = ""
 footerAboutText = ""
 
 [options]
-  bootStrapJs = true
-  breadCrumb = true
-  listCategoryFilter = true
-  listTagFilter = true
+bootStrapJs = true
+breadCrumb = true
+listCategoryFilter = true
+listTagFilter = true

@@ -1,17 +1,17 @@
-############################# events ###################################
+# ---------------------------- events -----------------------------------
+
 events:
-  enable : true
-  image : images/events/bear-branch.jpg
-  image_webp : images/events/bear-branch.webp
-  title : Regularly Occurring Events.
-  content : >
+  enable: true
+  image: images/events/bear-branch.jpg
+  image_webp: images/events/bear-branch.webp
+  title: Regularly Occurring Events.
+  content: >
     We host a variety of events throughout the year, designed to engage the community,
     promote astronomy, and provide opportunities for learning and enjoyment of the
     night sky. Please check our event calendar for the latest updates and details on
     each event.
   link: https://nightsky.jpl.nasa.gov/events/wasi/
-
-  event_item: 
+  event_item:
     # event item
     - title: Monthly Meeting
       icon: ti-calendar # themify icon pack : https://themify.me/themify-icons

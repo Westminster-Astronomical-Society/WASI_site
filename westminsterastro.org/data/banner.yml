@@ -1,12 +1,13 @@
-############################### Banner ################################
+# ---------------------------- Banner ----------------------------
+
 banner:
-  enable : true
-  bg_image_webp : "images/backgrounds/hero-area.webp"
-  bg_image : "images/backgrounds/hero-area.jpg"
-  icon : "" # themify icon pack : https://themify.me/themify-icons
-  title : "Westminster Astronomical Society"
-  content : "Bringing the Universe to Carroll County, Maryland since 1984"
+  enable: true
+  bg_image_webp: "images/backgrounds/hero-area.webp"
+  bg_image: "images/backgrounds/hero-area.jpg"
+  icon: "" # themify icon pack : https://themify.me/themify-icons
+  title: "Westminster Astronomical Society"
+  content: "Bringing the Universe to Carroll County, Maryland since 1984"
   button:
-    enable : true
-    label : "About WASI"
-    link : "#about"
+    enable: true
+    label: "About WASI"
+    link: "#about"

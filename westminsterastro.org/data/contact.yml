@@ -1,21 +1,21 @@
-############################### Contact ################################
+# ---------------------------- Contact --------------------------------
 
 contact:
-  enable : true
-  title : "Contact WASI"
-  content : >-
+  enable: true
+  title: "Contact WASI"
+  content: >-
     for any questions, comments, or to get involved with the
     Westminster Astronomical Society, please reach out to us
     using the contact information provided or send us a message
     through the contact form below.
 
-  address : "300 John Owings Rd. Westminster, MD 21158"
-  mail : "P.O. Box 1162, Westminster, MD 21158 "
-  email : "outreach@westminsterastro.org"
-  phone : "(443) 732-0020"
-  
-  contact_form : "https://nightsky.jpl.nasa.gov/contact/wasi/"
+  address: "300 John Owings Rd. Westminster, MD 21158"
+  mail: "P.O. Box 1162, Westminster, MD 21158 "
+  email: "outreach@westminsterastro.org"
+  phone: "(443) 732-0020"
+
+  contact_form: "https://nightsky.jpl.nasa.gov/contact/wasi/"
 
 map:
-  lat : 39.6474
-  lng : -76.9873
+  lat: 39.6474
+  lng: -76.9873
