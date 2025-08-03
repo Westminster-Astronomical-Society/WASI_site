@@ -73,7 +73,8 @@ blockquote {
 
 a /*.feather*/ {
     $twitter-blue: #55acee;
-    $github-black: #000;
+    $bsky-blue: #55acee;
+    $github-gray: #8b8b8b;
     $youtube-red: #FF0000;
     $facebook-blue: #3b5998;
     $icon-gray: #6c757d;
@@ -81,9 +82,12 @@ a /*.feather*/ {
     .feather-twitter:hover {
         fill: $twitter-blue;
     }
+    .feather-bsky:hover {
+        fill: $bsky-blue;
+    }
 
     .feather-github:hover {
-        fill: $github-black;
+        fill: $github-gray;
     }
 
     .feather-youtube:hover {

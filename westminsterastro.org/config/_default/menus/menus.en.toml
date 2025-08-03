@@ -99,6 +99,13 @@ title = "WASI News and Announcements"
   title = "Visit the GitHub project"
 
 [[social]]
+  name = "Bsky"
+  pre = "<svg xmlns='http://www.w3.org/2000/svg' class='feather feather-bsky'><use href='images/feather/feather-sprite.svg#bsky'/></svg>"
+  url = "https://bsky.app/profile/wasi-astro.bsky.social"
+  weight = 20
+  title = "Contact us on Bsky"
+
+[[social]]
   name = "Twitter"
   pre = "<svg xmlns='http://www.w3.org/2000/svg' class='feather feather-twitter'><use href='images/feather/feather-sprite.svg#twitter'/></svg>"
   url = "https://twitter.com/WASI_Astro/"
