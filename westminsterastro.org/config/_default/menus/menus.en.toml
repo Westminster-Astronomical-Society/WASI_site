@@ -106,11 +106,11 @@ title = "WASI News and Announcements"
   title = "Contact us on Bsky"
 
 [[social]]
-  name = "Twitter"
-  pre = "<svg xmlns='http://www.w3.org/2000/svg' class='feather feather-twitter'><use href='images/feather/feather-sprite.svg#twitter'/></svg>"
+  name = "Xitter"
+  pre = "<svg xmlns='http://www.w3.org/2000/svg' class='feather feather-xitter'><use href='images/feather/feather-sprite.svg#xitter'/></svg>"
   url = "https://twitter.com/WASI_Astro/"
   weight = 20
-  title = "Contact on Twitter"
+  title = "Contact us on Xitter"
 
 [[social]]
   name = "Youtube"
