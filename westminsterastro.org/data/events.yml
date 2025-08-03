@@ -3,7 +3,6 @@
 events:
   enable: true
   image: images/events/bear-branch.jpg
-  image_webp: images/events/bear-branch.webp
   title: Regularly Occurring Events.
   content: >
     We host a variety of events throughout the year, designed to engage the community,
