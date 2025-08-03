@@ -1,5 +1,9 @@
 {{ define "main" }}
 
+    {{ if .Site.Params.alert -}}
+    {{ partial "header/alert.html" . }}
+    {{ end -}}
+
     {{ partial "banner" . }}
 
     {{- partial "header/header.html" . -}}
