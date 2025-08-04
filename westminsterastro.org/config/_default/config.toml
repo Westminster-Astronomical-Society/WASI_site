@@ -47,3 +47,7 @@ priority = 0.5
 [[module.mounts]]
   source = "static"
   target = "static"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
