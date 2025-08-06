@@ -50,8 +50,8 @@
   <script src="{{ $sunMoonJs.RelPermalink }}"></script>
   <script src="{{ $almanacJs.RelPermalink }}"></script>
 {{ else -}}
-  {{ $sunMoonJs := $sunMoonJs | minify | fingerprint "sha512" -}}
-  {{ $almanacJs := $almanacJs | minify | fingerprint "sha512" -}}
+  {{ $sunMoonJs := $sunMoonJs | minify | fingerprint "sha256" -}}
+  {{ $almanacJs := $almanacJs | minify | fingerprint "sha256" -}}
   <script src="{{ $sunMoonJs.RelPermalink }}" integrity="{{ $sunMoonJs.Data.Integrity }}" crossorigin="anonymous"></script>
   <script src="{{ $almanacJs.RelPermalink }}" integrity="{{ $almanacJs.Data.Integrity }}" crossorigin="anonymous"></script>
 {{ end }}
