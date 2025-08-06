@@ -1,0 +1,27 @@
+{{ define "main" }}
+<main id="main" class="position-relative">
+  
+  <!-- Page Header -->
+  <section class="py-3 text-center text-white" style="background-color: var(--bs-dark);">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1 class="display-5 mb-4">{{ .Title }}</h1>
+          {{ if .Params.description }}
+          <p class="lead">{{ .Params.description }}</p>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Include the Almanac Partial -->
+  {{ partial "almanac.html" . }}
+
+  <!-- Content Section -->
+<div class="container py-3">
+  {{ .Content }}
+</div>
+
+</main>
+{{ end }}
