@@ -237,14 +237,17 @@ function updateMoonInformation(date) {
     try {
         // Get moon illumination and phase
         const moonIllumination = SunCalc.getMoonIllumination(date);
-        
+        // console.log('Illumination:', moonIllumination);
+
         // Get moon rise/set times
         const moonTimes = SunCalc.getMoonTimes(date, currentLatitude, currentLongitude);
         
         // Update moon phase
         const phase = getMoonPhaseName(moonIllumination.phase);
         safeUpdateElement('moon-phase-short', phase);
-        
+        // console.log('Phase:', moonIllumination.phase);
+        // console.log('Phase Name:', phase);
+
         // Update illumination percentage
         const illuminationPercent = Math.round(moonIllumination.fraction * 100);
         safeUpdateElement('moon-illumination', illuminationPercent + '%');
@@ -334,7 +337,7 @@ function getMoonPhaseName(phase) {
     if (phase < 0.01) return 'New Moon';
     if (phase < 0.24) return 'Waxing Crescent';
     if (phase < 0.26) return 'First Quarter';
-    if (phase < 0.49) return 'Waxing Gibbous';
+    if (phase < 0.48) return 'Waxing Gibbous';
     if (phase < 0.51) return 'Full Moon';
     if (phase < 0.74) return 'Waning Gibbous';
     if (phase < 0.76) return 'Last Quarter';
