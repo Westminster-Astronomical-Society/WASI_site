@@ -19,7 +19,7 @@
         {{ if .button.enable }}
         <a
           href="{{ .button.link }}"
-          class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill"
+          class="btn btn-outline-light btn-md px-5 py-3 rounded-pill"
         >
           {{ .button.label }}
         </a>
@@ -30,12 +30,20 @@
 
   <!-- Image Credit -->
   {{ if .bg_image_credit }}
-  <div class="position-absolute bottom-0 end-0 m-3">
+  <div class="position-absolute bottom-0 start-0 m-3">
     <small class="text-white-50" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);">
       {{ .bg_image_credit | markdownify | safeHTML }}
     </small>
   </div>
   {{ end }}
+
+    {{ if .donate.enable }}
+    <div class="position-absolute bottom-0 end-0 m-4">
+      <a href="{{ .donate.link }}" class="donate-btn">
+      <img src="{{ .donate.image | relURL }}" alt="Donate" class="donate-img" />
+      </a>
+    </div>
+    {{ end }}
 
 </section>
 {{ end }} {{ end }}
