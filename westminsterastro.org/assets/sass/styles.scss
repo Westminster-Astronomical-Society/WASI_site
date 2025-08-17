@@ -1,3 +1,32 @@
+// ...existing code...
+// ...existing code...
+    .donate-img {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        transition: width 0.2s, height 0.2s, transform 0.2s, box-shadow 0.2s;
+        will-change: transform, box-shadow;
+    }
+
+    .donate-btn:hover .donate-img {
+        transform: translateY(-4px) scale(1.05);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.45);
+    }
+
+    @media (max-width: 992px) {
+        .donate-img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .donate-img {
+            width: 56px;
+            height: 56px;
+        }
+    }
 // Dark theme custom styles
 
 // Banner section styling

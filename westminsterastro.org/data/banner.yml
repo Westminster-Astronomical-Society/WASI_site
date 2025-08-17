@@ -11,3 +11,7 @@ banner:
     enable: true
     label: "About WASI"
     link: "#about"
+  donate:
+    enable: true
+    image: "images/donate.svg"
+    link: "support"

@@ -41,3 +41,18 @@
   initContactMap({{ .Site.Data.contact.map.lat }}, {{ .Site.Data.contact.map.lng }}, '{{ .Site.Data.contact.contact.address }}');
 </script>
 {{ end }}
+
+<!-- Almanac Scripts - Only load on almanac page -->
+{{ if eq .Layout "almanac" }}
+{{ $sunMoonJs := resources.Get "js/sun-moon.js" }}
+{{ $almanacJs := resources.Get "js/almanac.js" }}
+{{ if eq (hugo.Environment) "development" -}}
+  <script src="{{ $sunMoonJs.RelPermalink }}"></script>
+  <script src="{{ $almanacJs.RelPermalink }}"></script>
+{{ else -}}
+  {{ $sunMoonJs := $sunMoonJs | minify | fingerprint "sha256" -}}
+  {{ $almanacJs := $almanacJs | minify | fingerprint "sha256" -}}
+  <script src="{{ $sunMoonJs.RelPermalink }}" integrity="{{ $sunMoonJs.Data.Integrity }}" crossorigin="anonymous"></script>
+  <script src="{{ $almanacJs.RelPermalink }}" integrity="{{ $almanacJs.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}
+{{ end }}

@@ -43,6 +43,13 @@ weight = 70
 title = "Astronomy Resources"
 
 [[main]]
+  name = "Almanac"
+  url = "almanac"
+  weight = 5
+  parent = "resources"
+  title = "Sun and Moon Almanac"
+
+[[main]]
   name = "General Astronomy"
   url = "tags/astronomy"
   weight = 10
